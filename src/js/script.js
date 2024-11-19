@@ -16,3 +16,4 @@ if (carousel) {
         carousel.scrollLeft += carousel.offsetWidth;
     });
 }
+
