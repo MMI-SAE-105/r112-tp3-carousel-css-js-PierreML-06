@@ -40,7 +40,7 @@ display: flex;
   /* Aligne le contenu du bouton au centre verticalement - https://developer.mozilla.org/fr/docs/Web/CSS/align-items */
 align-items: center;
   /* Centre le contenu du bouton horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
-border: solid;
+border: 1px solid;
   /* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
 border-radius: 30px;
   /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
@@ -56,7 +56,7 @@ display: flex;
   /* Espace entre les éléments enfants 16px - https://developer.mozilla.org/fr/docs/Web/CSS/gap */
 gap: 16px;
   /* Ajoute un défilement horizontal si le contenu déborde - https://developer.mozilla.org/fr/docs/Web/CSS/overflow */
-overflow: hidden;
+overflow: scroll;
   /* Marge négative à gauche pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
 margin-right: -24px;
   /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
@@ -67,7 +67,7 @@ scroll-snap-type: x mandatory;
 
 .carousel__item {
   /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
-flex: 1 260px;
+flex: 1 0 260px;
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
 scroll-snap-align: center;
 }
@@ -75,4 +75,5 @@ scroll-snap-align: center;
 .carousel__item img {
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
 display: block;
+
 }
